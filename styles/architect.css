@@ -9,6 +9,12 @@
     border: 0px;
 
 }
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+}
+
 
 .text-light-gray {
     color: #727272;
@@ -30,11 +36,11 @@ nav {
     align-items: center;
 }
 
-.nav-title {
+/* .nav-title {
     font-size: 2.8rem;
     font-weight: 700;
     color: #131313;
-}
+} */
 
 nav>ul {
     display: flex;
