@@ -1,6 +1,12 @@
 /* shared styles */
-.btn-primary{
+.btn-primary {
+    border-radius: 8px;
     background: #FF900E;
+    color: #FFF;
+    font-size: 1.25rem;
+    padding: 20px 25px;
+    cursor: pointer;
+    border: 0px;
 
 }
 
@@ -8,29 +14,34 @@
 
 /* header styles part start */
 
-header{
+header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav-title{
+
+.nav-title {
     font-size: 2.8rem;
     font-weight: 700;
     color: #131313;
 }
-nav > ul {
+
+nav>ul {
     display: flex;
 }
+
 nav li {
     list-style: none;
     margin-right: 30px;
     font-weight: 500;
     font-size: 1rem;
 }
+
 nav li a {
     text-decoration: none;
     color: #424242;
@@ -40,22 +51,48 @@ nav li a {
 /* header styles part end */
 
 /* banner-styles part start */
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
-.banner-title{
+
+.banner-title {
     font-size: 4rem;
     font-size: 700;
     color: #131313;
 
 }
-.banner-description{
+
+.banner-description {
     color: #727272;
 }
-
-
-
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
 
 /* banner-styles part end */
+
+/* responsive media queries */
+/* mobile devices */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+}
+
+/* tablet and medium devices */
+@media screen and (max-width:576px) and (min-width:960px) {
+
+    nav {
+        flex-direction: column;
+    }
+    header{
+        padding: 50px;
+    }
+}
